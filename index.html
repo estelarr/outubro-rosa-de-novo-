@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Outubro Rosa 2026: prevenção dos cânceres de mama e do colo do útero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff3f7;--surface:#ffffff;--ink:#3b0a23;--muted:#6e4358;--brand:#b3124f;--brand-ink:#ffffff;--soft:#fbd3e1;--line:#efb9cd;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d0713;--surface:#2b0d1e;--ink:#fde8f0;--muted:#d6a9bd;--brand:#ff7aa8;--brand-ink:#2b0516;--soft:#4a1431;--line:#5e2542;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1d0713;--surface:#2b0d1e;--ink:#fde8f0;--muted:#d6a9bd;--brand:#ff7aa8;--brand-ink:#2b0516;--soft:#4a1431;--line:#5e2542;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.05;margin:0}
+a{color:var(--brand)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;font-weight:600}
+header.top nav{display:flex;gap:1.25rem;flex-wrap:wrap}
+header.top a{text-decoration:none;color:var(--ink)}
+header.top a:hover{color:var(--brand)}
+.hero{padding:3rem 0 4rem;display:grid;gap:2rem;grid-template-columns:1fr;align-items:center}
+@media(min-width:56rem){.hero{grid-template-columns:1.5fr 1fr}}
+.hero h1{font-size:clamp(3.6rem,13vw,9rem);font-weight:800;letter-spacing:-.04em;color:var(--brand)}
+.hero p{max-width:34rem;font-size:1.25rem;margin:1.5rem 0 2rem}
+.btn{display:inline-block;background:var(--brand);color:var(--brand-ink);padding:.85rem 1.5rem;border-radius:999px;font-weight:600;text-decoration:none}
+.btn:hover{filter:brightness(1.1)}
+.ribbon{width:100%;max-width:20rem;margin:0 auto;display:block}
+.ribbon path{fill:none;stroke:var(--brand);stroke-width:26;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.2s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.ribbon path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;letter-spacing:-.025em;max-width:40rem}
+.lead{max-width:40rem;color:var(--muted);margin:1rem 0 2rem}
+.stats{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:1.25rem;padding:1.5rem}
+.stat b{display:block;font:800 clamp(2.4rem,6vw,3.4rem)/1 "Bricolage Grotesque",sans-serif;color:var(--brand);letter-spacing:-.03em}
+.stat span{display:block;margin-top:.6rem;color:var(--muted)}
+.cols{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr))}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:1.25rem;padding:1.75rem}
+.panel.hl{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+.panel h3{font-size:1.7rem;font-weight:800;margin-bottom:1rem}
+.panel h4{margin:1.5rem 0 .5rem;font-size:1rem}
+.panel ul{margin:0;padding-left:1.2rem}
+.panel li{margin:.4rem 0}
+.news{display:grid;gap:2rem;grid-template-columns:1fr;align-items:start}
+@media(min-width:56rem){.news{grid-template-columns:1fr 1fr}}
+.big{font:800 clamp(3rem,9vw,6rem)/.95 "Bricolage Grotesque",sans-serif;letter-spacing:-.04em;color:var(--brand)}
+.range{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
+.range div{flex:1 1 11rem;border-radius:1rem;padding:1rem 1.25rem;background:var(--soft)}
+.range div small{display:block;color:var(--muted)}
+.range div strong{font-size:1.15rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin:0;padding:0;list-style:none}
+.chips li{background:var(--soft);border-radius:999px;padding:.45rem 1rem;font-weight:600;font-size:.95rem}
+.sub{margin:2rem 0 .75rem;font-size:1.3rem;font-weight:800}
+.alert{background:var(--soft);border-left:6px solid var(--brand);border-radius:.5rem 1.25rem 1.25rem .5rem;padding:1.5rem}
+footer{border-top:1px solid var(--line);padding:2.5rem 0 3rem;color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <span>Outubro Rosa 2026</span>
+  <nav aria-label="Seções"><a href="#numeros">Números</a><a href="#prevencao">Prevenção</a><a href="#mamografia">Mamografia</a><a href="#rol">Cobertura</a></nav>
+</header>
+
+<main>
+<div class="hero">
+  <div>
+    <h1>Outubro Rosa</h1>
+    <p>Prevenção, detecção precoce e tratamento adequado: o mês em que o cuidado com a mama e com o colo do útero ganha atenção de todo o país.</p>
+    <a class="btn" href="#prevencao">Veja como se cuidar</a>
+  </div>
+  <svg class="ribbon" viewBox="0 0 300 380" role="img" aria-label="Laço rosa, símbolo da campanha">
+    <path d="M150 190 C90 110 70 20 120 20 C170 20 165 120 150 190 C135 120 130 20 180 20 C230 20 210 110 150 190 C185 270 215 340 245 360 M150 190 C115 270 85 340 55 360"/>
+  </svg>
+</div>
+
+<section id="numeros">
+  <h2>O câncer de mama é o mais incidente entre as mulheres</h2>
+  <p class="lead">Estimativas do Instituto Nacional de Câncer (INCA) para o triênio 2026–2028, desconsiderando os tumores de pele não melanoma.</p>
+  <div class="stats">
+    <div class="stat"><b>78.610</b><span>novos casos de câncer de mama por ano</span></div>
+    <div class="stat"><b>19.310</b><span>novos casos de câncer do colo do útero por ano, o 3º mais incidente entre as brasileiras</span></div>
+    <div class="stat"><b>781 mil</b><span>novos casos de câncer por ano, de todos os tipos</span></div>
+  </div>
+</section>
+
+<section id="prevencao">
+  <h2>Conhecer o corpo e procurar ajuda cedo faz diferença</h2>
+  <p class="lead">Ao perceber qualquer alteração suspeita, procure avaliação profissional. Veja as medidas de prevenção, o rastreamento e os sinais de atenção de cada doença.</p>
+  <div class="cols">
+    <article class="panel">
+      <h3>Câncer de mama</h3>
+      <h4>Prevenção e rastreamento</h4>
+      <ul>
+        <li>Pratique atividade física, tenha alimentação adequada, controle o peso e reduza o consumo de bebidas alcoólicas.</li>
+        <li>Conheça o próprio corpo e observe possíveis alterações nas mamas.</li>
+        <li>Faça a mamografia de rastreamento conforme as recomendações de saúde e a orientação do profissional assistente.</li>
+      </ul>
+      <h4>Sinais de atenção</h4>
+      <ul>
+        <li>Nódulo endurecido</li>
+        <li>Alterações na pele ou no mamilo</li>
+        <li>Saída espontânea de líquido</li>
+        <li>Pequenos nódulos nas axilas ou no pescoço</li>
+      </ul>
+    </article>
+    <article class="panel">
+      <h3>Câncer do colo do útero</h3>
+      <h4>Prevenção e rastreamento</h4>
+      <ul>
+        <li>Vacine-se contra o HPV, uma das principais medidas de prevenção.</li>
+        <li>Use preservativo, que reduz o risco de transmissão do HPV.</li>
+        <li>Faça o rastreamento conforme as recomendações, com o teste de DNA-HPV como método prioritário.</li>
+      </ul>
+      <h4>Sinais de atenção</h4>
+      <ul>
+        <li>Sangramento vaginal fora do período menstrual ou após a relação sexual</li>
+        <li>Corrimento persistente</li>
+        <li>Dor pélvica</li>
+      </ul>
+      <p style="color:var(--muted);margin:1.25rem 0 0">A doença está ligada principalmente à infecção persistente por tipos oncogênicos do HPV.</p>
+    </article>
+  </div>
+</section>
+
+<section id="mamografia">
+  <div class="news">
+    <div>
+      <p class="big">1º/10/2026</p>
+      <div class="range">
+        <div><small>Antes</small><strong>Mulheres de 40 a 69 anos</strong></div>
+        <div style="background:var(--brand);color:var(--brand-ink)"><small style="color:inherit;opacity:.85">Agora</small><strong>Sem restrição de idade ou gênero</strong></div>
+      </div>
+    </div>
+    <div>
+      <h2>Mamografia digital sem limite de idade nos planos de saúde</h2>
+      <p class="lead" style="margin-bottom:1rem">Desde 1º de outubro, a cobertura obrigatória aprovada pela Agência Nacional de Saúde Suplementar (ANS) vale para qualquer idade e gênero, desde que haja indicação médica.</p>
+      <p>A realização do exame passa a ser definida pela avaliação clínica do médico e pelas necessidades de cada paciente. A cobertura vale para rastreamento, investigação diagnóstica e acompanhamento do tratamento. A doença também pode ocorrer em homens, e por isso a regra inclui pacientes de qualquer gênero.</p>
+    </div>
+  </div>
+</section>
+
+<section id="rol">
+  <h2>O que o plano de saúde cobre</h2>
+  <p class="lead">Além da mamografia digital, o Rol de Procedimentos e Eventos em Saúde da ANS prevê cobertura para diagnóstico, tratamento e reabilitação.</p>
+  <div class="cols">
+    <div>
+      <h3 class="sub" style="margin-top:0">Investigação e diagnóstico</h3>
+      <ul class="chips">
+        <li>Exames laboratoriais</li><li>Pesquisas genéticas</li><li>Teste DNA-HPV</li><li>Ultrassonografia mamária e transvaginal</li><li>Tomografia computadorizada</li><li>Ressonância magnética</li><li>Biópsias e punções aspirativas</li><li>PET-CT*</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="sub" style="margin-top:0">Tratamento</h3>
+      <ul class="chips">
+        <li>Cirurgias oncológicas</li><li>Radioterapias</li><li>Quimioterapias</li><li>Antineoplásicos**</li>
+      </ul>
+      <h3 class="sub">Reparação e reabilitação</h3>
+      <ul class="chips">
+        <li>Reconstrução mamária após mastectomia</li><li>Psicoterapia, fisioterapia e nutrição***</li>
+      </ul>
+    </div>
+  </div>
+  <p style="color:var(--muted);font-size:.9rem;margin-top:1.5rem">* Conforme Diretriz de Utilização. ** Conforme prescrição do médico assistente e eventuais Diretrizes de Utilização. *** Observadas as regras previstas no Rol.</p>
+</section>
+
+<section>
+  <div class="alert">
+    <h3 style="font-size:1.6rem;font-weight:800;margin-bottom:.75rem">A ANS incentiva a qualificação do cuidado oncológico</h3>
+    <p style="margin:0;max-width:46rem">Em 2025, a ANS lançou o Manual de Certificação de Boas Práticas em Atenção Oncológica, para estimular as operadoras a adotarem modelos de cuidado integral e centrado no paciente, com foco em detecção precoce, acesso oportuno ao tratamento e seguimento adequado. A certificação abrange cinco linhas de cuidado prioritárias, entre elas as de câncer de mama e de colo do útero.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>Informações baseadas na matéria “<a href="https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/outubro-rosa-reforca-a-importancia-da-prevencao-dos-canceres-de-mama-e-do-colo-do-utero">Outubro Rosa reforça a importância da prevenção dos cânceres de mama e do colo do útero</a>”, da Agência Nacional de Saúde Suplementar (ANS), publicada em 13/10/2026. Dados de incidência: INCA.</p>
+  <p>Este site tem caráter informativo e não substitui a avaliação de um profissional de saúde. Veja <a href="https://www.gov.br/ans/pt-br/assuntos/consumidor/o-que-o-seu-plano-de-saude-deve-cobrir-1">o que o seu plano de saúde deve cobrir</a>.</p>
+</footer>
+</div>
+</body>
+</html>
